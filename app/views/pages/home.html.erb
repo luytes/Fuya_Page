@@ -1,2 +1,232 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-fluid no-pad">
+  <div class="banner" id="change_color" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.35) 50%), url('<%= asset_path('fuya_banner1.jpg') %>')">
+    <div class="banner-content">
+      <div class="logo bg-picture" style="background-image: url('<%= asset_path('fuya-logo-white.png') %>')"></div>
+      <p>Running Sushi and more...</p>
+    </div>
+  </div>
+</div>
+
+  <!-- About us -->
+  <div class="container-fluid bg-black padded">
+    <div class="row">
+      <div class="about-content">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
+          <h2 class="upcase">Über uns</h2>
+          <p>
+            Bei uns im Fuya Waldshut verwöhnen wir Sie mit authentischen chinesischen und japanischen Spezialitäten. Schauen Sie unseren Meisterköchen am Wok über die Schulter, seien Sie hautnah dabei, wenn die handgezogenen Nudeln, die Ramen, kunstvoll zubereitet werden und genießen Sie unsere Sushi-Spezialitäten auch am Laufband!
+          </p>
+
+          <p>
+            Direkt am Bahnhof Waldshut begrüßen wir Sie mit einem reichhaltigen Angebot an frischen Speisen und exzellentem Service. Genießen Sie in eleganter Atmosphäre oder feiern Sie mit bis zu 140 Gästen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu -->
+  <div class="container-fluid bg-black space-bot-1">
+    <div class="row">
+      <div class="menu pos-relative">
+        <div class="lunch-menu">
+          <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
+            <%= image_tag 'fuya5.jpg', class: "bg-picture full-picture menu-picture" %>
+            <div type="button" class="menu-button upcase" data-toggle="modal" data-target="#running">
+              Running
+            </div>
+          </div>
+        </div>
+        <div class="dinner-menu">
+          <div class="col-xs-12 col-sm-6 col-m-6 col-l-6 text-center no-pad">
+            <%= image_tag 'fuya7.jpg', class: "bg-picture full-picture menu-picture" %>
+            <div type="button" class="menu-button upcase" data-toggle="modal" data-target="#sushi">
+              Sushi
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Banner -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="news">
+        <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%), url('<%= asset_path('fuya3.jpg') %>')">
+          <div class="banner-content">
+            <h2 class="upcase">Neuigkeiten</h2>
+            <p>Bleiben Sie auf dem neuesten Stand!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Content -->
+  <div class="container-fluid padded-2" id="news">
+    <div class="row">
+      <div class="news-content">
+        <div class="col-xs-12 col-sm-7 col-m-7 col-l-7">
+          <div class="news-content-left">
+            <h3 class="upcase">Hier kommt deine nachricht</h3>
+            <div class="news-date">
+              <!-- Insert Date in here -->
+              01/08/2017
+            </div>
+            <div class="news-detail">
+              <!-- Insert Detail here -->
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-m-5 col-l-5 no-pad">
+          <div class="news-content-right">
+            <div class="news-picture" style="background-image: url('<%= asset_path('fuya4.jpg') %>')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Running Sushi -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="news">
+        <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%), url('<%= asset_path('fuya5.jpg') %>')">
+          <div class="banner-content">
+            <h2 class="upcase">Standort</h2>
+            <p>Eisenbahnstr. 23</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Öffnungszeiten -->
+  <div class="container-fluid padded">
+    <div class="row">
+      <div class="opening-hours">
+        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6">
+          <div class="opening-header">
+            <h3 class="upcase">ÖFFNUNGSZEITEN</h3>
+            <div class="opening-subheader">
+              <!-- Insert Day here -->
+              Mo - So
+            </div>
+            <div class="opening-detail">
+              <!-- Insert Detail here -->
+              11:30 – 14:30 / 17:30 – 22:30
+            </div>
+            <div class="opening-subheader">
+              <!-- Insert Day here -->
+              Dienstag
+            </div>
+            <div class="opening-detail">
+              <!-- Insert Detail here -->
+              geschlossen
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6">
+          <div class="opening-header">
+            <h3 class="upcase">an feiertagen</h3>
+            <div class="opening-subheader">
+              <!-- Insert Day here -->
+              24. Dez
+            </div>
+            <div class="opening-detail">
+              <!-- Insert Detail here -->
+              geschlossen
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation -->
+  <div class="container-fluid padded">
+    <div class="row">
+      <div class="reservation">
+        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6" id="reservation">
+          <div class="reservation-header">
+            <h3>telefonische Reservierung</h3>
+            <div class="reservation-detail">
+              <!-- Insert Detail here -->
+              Bitte rufen Sie uns an unter +49 (0)7751 8962680 <br>
+              zu den folgenden Zeiten: <br>
+              täglich: 11:30 – 22:30 <br>
+              <p>Reservierungen per E-Mail können leider nicht berücksichtigt werden. <br>
+              <span>Rufen Sie uns an, wenn Sie sich verspäten! Die Reservierung verfällt andernfalls nach 15 Minuten.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-m-6 col-l-6">
+          <div class="reservation-header">
+            <h3>Online Reservierung</h3>
+            <div class="reservation-detail">
+              <!-- Insert Detail here -->
+              Online-Reservierungen sind zur Zeit bei uns leider nicht möglich.
+              Bitte rufen Sie uns telefonisch an um einen Tisch zu reservieren.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modals -->
+<div class="modal fade" id="running" tabindex="-1" role="dialog" aria-labelledby="Runninglabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="Runninglabel">Running</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        All you can eat vom Laufband! <br>
+        Neben vielfältigen Sushi-Spezialitäten erwartet Sie auf unserem Laufband-Buffet eine umfangreiche Auswahl an warmen und kalten Köstlichkeiten: Von Ente über Nudeln bis hin zu hausgemachten Desserts fährt alles in vielen kleinen Schlemmerportionen direkt an Ihrem Tisch vorbei. Sie brauchen nur zuzugreifen! <br>
+
+        Von Montag bis Sonntag (Dienstag Ruhetag) ab 18 Uhr für nur 21 EUR pro Person. Für Kinder unter sechs Jahren nur 8,- EUR und unter zwölf Jahren nur 12,80 EUR.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="sushi" tabindex="-1" role="dialog" aria-labelledby="SushiLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="SushiLabel">All you can eat vom Laufband!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Von japanischen Kochprofis frisch zubereitet genießen Sie bei uns eine Vielfalt feinster Sushi-Kreationen. Probieren Sie unsere klassischen Maki- oder Futomaki-Sushi, dünne Hosomaki auch mal mit Gemüse, edle Nigiri oder unsere feinsten Sashimi. <br>
+        Alle unsere Spezialitäten erhalten Sie à la carte und ab 18 Uhr zusätzlich auch am Laufband-Buffet. <br>
+        Erleben Sie außergewöhnliche japanische und chinesische Köstlichkeiten.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= content_for(:after_js) do %>
+  <script>
+    var scroll_start = 0;
+    var change_color = $('#change_color');
+    if (change_color.length) {
+      $(document).scroll(updateNavStyle);
+      updateNavStyle(); // Note this.
+    }
+  </script>
+<% end %>
